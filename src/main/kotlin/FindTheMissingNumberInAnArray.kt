@@ -11,6 +11,10 @@ fun main(args: Array<String>) {
     println("arr3NumMissing4 ::: findMissingNumMethod1 :::: ${findMissingNumMethod1(arr3NumMissing4)}")
 
 
+    val arr2NumMissing4 = intArrayOf(5, 3)
+    println("arr2NumMissing4 ::: findMissingNumMethod1 :::: ${findMissingNumMethod1(arr2NumMissing4)}")
+
+
 }
 
 fun findMissingNumMethod1(arrInput: IntArray): Int {
@@ -18,7 +22,7 @@ fun findMissingNumMethod1(arrInput: IntArray): Int {
 
     var missingNum = 0
 
-    if(arrInput.isNotEmpty() && arrInput.size > 2) {
+    if(arrInput.isNotEmpty() && arrInput.size > 1) {
 
         val sortedArr = arrInput.sorted()
 
